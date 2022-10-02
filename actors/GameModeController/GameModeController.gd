@@ -12,6 +12,8 @@ var game_modes = [
 	preload("res://game_modes/DeliveryGameMode/DeliveryGameMode.tscn"),
 ]
 
+var game_mode_index = 0
+
 var player
 var announcement_overlay
 var score_overlay
@@ -28,6 +30,9 @@ var count_down_played = false
 
 func _ready():
 	randomize()
+	
+	game_modes.shuffle()
+	game_mode_index = 0
 	
 	player = get_node("../Player")
 	announcement_overlay = get_node("../AnnouncementOverlay")
@@ -86,7 +91,7 @@ func _end_current_game_mode():
 func _prepare_next_game_mode():
 	_end_current_game_mode()
 	
-	var next_game_mode = _get_random_game_mode()
+	var next_game_mode = _get_next_game_mode()
 	var next_game_mode_instance = next_game_mode.instance()
 	add_child(next_game_mode_instance)
 	
@@ -103,9 +108,15 @@ func _start_current_game_mode():
 	
 	set_deferred("count_down_played", false)
 
-func _get_random_game_mode():
-	var random_game_mode_index = randi() % game_modes.size()
-	return game_modes[random_game_mode_index]
+func _get_next_game_mode():
+	var next_game_modes = game_modes[game_mode_index]
+	
+	game_mode_index += 1
+	if game_mode_index >= max(0, game_modes.size() - 3): # shuffle every 3 games
+		game_modes.shuffle()
+		game_mode_index = 0
+	
+	return next_game_modes
 
 func _destroy_game_mode(game_mode_script):
 	game_mode_script.queue_free()

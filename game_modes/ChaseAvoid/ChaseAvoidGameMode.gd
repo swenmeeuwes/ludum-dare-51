@@ -13,7 +13,7 @@ func _init():
 	announcement = "Aliens?!"
 	announcement_audio_stream = preload("res://sounds/aliens.ogg")
 	
-	enemy_movement_speed = min(max_enemy_movement_speed, 32 + 8 * difficulty_level)
+	enemy_movement_speed = min(max_enemy_movement_speed, 32 + 12 * difficulty_level)
 
 func start():
 	var enemies_to_spawn = min(20, 3 + floor(difficulty_level * 2))
