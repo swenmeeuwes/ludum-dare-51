@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="all_you_can_eat_vos_data" version="1.3.0" audacityversion="2.1.0" sel0="0.3831292517" sel1="0.3831292517" vpos="0" h="0.0000000000" zoom="86.1328125000" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds">
+	<tags/>
+	<wavetrack name="Audiospoor" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="570240">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000005.au" len="262144" min="-0.456635" max="0.315521" rms="0.038336"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0000317.au" len="262144" min="-0.533112" max="0.481567" rms="0.052353"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e0000989.au" len="45952" min="-0.034851" max="0.029938" rms="0.004825"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Audiospoor" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="570240">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000904.au" len="262144" min="-0.456635" max="0.315521" rms="0.038336"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0000cf0.au" len="262144" min="-0.533112" max="0.481567" rms="0.052353"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e0000ade.au" len="45952" min="-0.034821" max="0.029907" rms="0.004825"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

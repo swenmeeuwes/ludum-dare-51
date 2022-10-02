@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/chocolate_rain.ogg-7e4620a477094b94e897797831ea5cc3.oggstr"
+
+[deps]
+
+source_file="res://sounds/chocolate_rain.ogg"
+dest_files=[ "res://.import/chocolate_rain.ogg-7e4620a477094b94e897797831ea5cc3.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

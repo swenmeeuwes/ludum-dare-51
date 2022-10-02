@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/shop_till_you_drop.ogg-21bd14a820d13755379e8daffa539f8f.oggstr"
+
+[deps]
+
+source_file="res://sounds/shop_till_you_drop.ogg"
+dest_files=[ "res://.import/shop_till_you_drop.ogg-21bd14a820d13755379e8daffa539f8f.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/countdown.ogg-b50ff433e92c6acf2625d9fac9dcc46b.oggstr"
+
+[deps]
+
+source_file="res://sounds/countdown.ogg"
+dest_files=[ "res://.import/countdown.ogg-b50ff433e92c6acf2625d9fac9dcc46b.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

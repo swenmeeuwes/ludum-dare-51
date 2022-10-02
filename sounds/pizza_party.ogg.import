@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/pizza_party.ogg-73cd49c3065ff740983bb56534528fbd.oggstr"
+
+[deps]
+
+source_file="res://sounds/pizza_party.ogg"
+dest_files=[ "res://.import/pizza_party.ogg-73cd49c3065ff740983bb56534528fbd.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
