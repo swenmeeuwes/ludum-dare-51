@@ -4,11 +4,11 @@ onready var next_game_mode_timer = $NextGameModeTimer
 onready var count_down_audio_stream_player = $CountDownAudioStreamPlayer
 
 var game_modes = [
-#	preload("res://game_modes/Collect/CollectGameMode.tscn"),
-#	preload("res://game_modes/ChaseAvoid/ChaseAvoidGameMode.tscn"),
-#	preload("res://game_modes/Meteorites/MeteoritesGameMode.tscn"),
-#	preload("res://game_modes/BulletHell/BulletHellGameMode.tscn"),
-#	preload("res://game_modes/AvalancheGameMode/AvalancheGameMode.tscn"),
+	preload("res://game_modes/Collect/CollectGameMode.tscn"),
+	preload("res://game_modes/ChaseAvoid/ChaseAvoidGameMode.tscn"),
+	preload("res://game_modes/Meteorites/MeteoritesGameMode.tscn"),
+	preload("res://game_modes/BulletHell/BulletHellGameMode.tscn"),
+	preload("res://game_modes/AvalancheGameMode/AvalancheGameMode.tscn"),
 	preload("res://game_modes/DeliveryGameMode/DeliveryGameMode.tscn"),
 ]
 
@@ -66,8 +66,8 @@ func add_score(value):
 	score_overlay.show_score(score)
 
 func get_difficulty_level():
-#	return 1 + floor(game_modes_completed / 3.0)
-	return 100 + floor(game_modes_completed / 1.0)
+	return 1 + floor(game_modes_completed / 4.0)
+#	return 100 + floor(game_modes_completed / 1.0)
 
 func _end_current_game_mode():
 	if (current_game_mode != null):

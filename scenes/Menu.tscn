@@ -45,7 +45,7 @@ color = Color( 0.239216, 0.235294, 0.388235, 1 )
 
 [node name="GameTitleLabel" type="Label" parent="Control"]
 anchor_right = 1.0
-margin_bottom = 55.0
+margin_bottom = 84.0
 custom_fonts/font = SubResource( 1 )
 text = "Hero for 10 seconds"
 align = 1
@@ -60,9 +60,9 @@ margin_left = -484.0
 margin_top = -21.0
 margin_right = -7.0
 margin_bottom = -8.0
-custom_colors/font_color = Color( 0.211765, 0.211765, 0.262745, 1 )
+custom_colors/font_color = Color( 0.572549, 0.631373, 0.72549, 1 )
 custom_fonts/font = SubResource( 2 )
-text = "Made for Ludum Dare 51 - \"Every 10 seconds\""
+text = "Made by Swen for Ludum Dare 51 - \"Every 10 seconds\""
 align = 2
 valign = 2
 
