@@ -16,7 +16,7 @@ func _init():
 	enemy_movement_speed = min(max_enemy_movement_speed, 32 + 8 * difficulty_level)
 
 func start():
-	var enemies_to_spawn = 3 + floor(difficulty_level * 2)
+	var enemies_to_spawn = min(20, 3 + floor(difficulty_level * 2))
 	for i in range(0, enemies_to_spawn):
 		_spawn_enemy()
 
@@ -37,7 +37,7 @@ func _despawn_enemy(enemy):
 	enemy.despawn()
 
 func _get_random_location():
-	var min_distance_from_player = player.movement_speed * .5 + enemy_movement_speed * .5
+	var min_distance_from_player = player.movement_speed * .5 + enemy_movement_speed
 	var x = 0
 	var y = 0
 	

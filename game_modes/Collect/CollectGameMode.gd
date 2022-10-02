@@ -50,9 +50,9 @@ func _ready():
 	progression_slider.value = 0
 
 func start():
-	start_amount = 10 + 10 * difficulty_level
+	start_amount = min(120, 10 + 10 * difficulty_level)
 	amount_collected = 0
-	goal_percentage_01 = min(.8, .25 + .07 * difficulty_level)
+	goal_percentage_01 = min(.7, .25 + .07 * difficulty_level)
 	
 	var tween = create_tween().set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 	tween.tween_property(progression_slider, "rect_scale", Vector2.ONE, .45)

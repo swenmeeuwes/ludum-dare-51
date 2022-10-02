@@ -37,7 +37,7 @@ func _ready():
 	pass
 
 func start():
-	for i in min(3, floor(1 + .5 * (difficulty_level - 1))):
+	for i in min(2, floor(1 + .5 * (difficulty_level - 1))):
 		_spawn_deliverable()
 		_spawn_delivery_target()
 	

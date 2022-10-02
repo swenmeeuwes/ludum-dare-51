@@ -11,7 +11,7 @@ func _init():
 	announcement_audio_stream = preload("res://sounds/bullet_hell.ogg")
 
 func start():
-	var enemies_to_spawn = 3 + difficulty_level
+	var enemies_to_spawn = min(10, 3 + difficulty_level)
 	for i in range(0, enemies_to_spawn):
 		_spawn_enemy()
 
